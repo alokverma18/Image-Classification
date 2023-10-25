@@ -1,0 +1,72 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:              Coffee_mug_01.jpg  label:                 coffee mug
+ 2 key:                     Dog_02.jpg  label:                        dog
+ 3 key:                    Frog_01.jpg  label:                       frog
+ 4 key:                     Dog_01.jpg  label:                        dog
+
+     MATCH:
+
+             Coffee_mug_01.jpg: 
+Real:                 coffee mug   Classifier:                     coffee mug
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:                   pug, pug-dog
+
+                   Frog_01.jpg: 
+Real:                       frog   Classifier:           tree frog, tree-frog
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                   pug, pug-dog
+
+ NOT A MATCH:
+
+# Total Images 4 # Matches: 4 # NOT Matches: 0
+
+     MATCH:
+
+             Coffee_mug_01.jpg: 
+Real:                 coffee mug   Classifier:                     coffee mug  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:                   pug, pug-dog  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                   Frog_01.jpg: 
+Real:                       frog   Classifier:           tree frog, tree-frog  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                   pug, pug-dog  
+PetLabelDog: 1  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+# Total Images 4 # Matches: 4 # NOT Matches: 0
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+
+*** Results Summary for CNN Model Architecture ALEXNET ***
+N Images            :   4
+N Dog Images        :   2
+N Not-Dog Images    :   2
+ 
+pct_match           : 100.0
+pct_correct_dogs    : 100.0
+pct_correct_breed   : 100.0
+pct_correct_notdogs : 100.0
+
+** Total Elapsed Runtime: 0:0:1
